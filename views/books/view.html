@@ -1,0 +1,14 @@
+<div ng-app="mainApp" ng-controller="bookCtrl">
+    <h2>Książki autora: </h2>
+    <div id="bookList" >
+        <div class="book" ng-repeat="item in items">
+        <h3>{{item.tytul}}</h3>
+        <div class="cover" ng-click="show = !show">
+            <img src="images/covers/{{item.okladka}}" alt="{{item.tytul}}" />
+            <p class="text">Rozwiń opis</p>
+        </div>
+        <div class="description" ng-show="show">{{item.tresc}}</div>
+            <hr>
+    </div>
+</div>
+</div>

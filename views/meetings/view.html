@@ -1,0 +1,18 @@
+<div ng-app="mainApp" ng-controller="meetCtrl" id="meetings">
+    <div id="wiadomosc">{{wiadomosc}}</div>
+    <h2>Aktualności:</h2>
+    <button ng-click="goToAddView()">Dodaj</button>
+    <ul>
+        <li ng-repeat="item in items" id="{{item.id}}" ng-model="listEntry">
+            <a href="#/entry/{{item.id}}"> <p>{{item.tytul}}</p></a>
+            <div class="entryDate">{{item.data}}</div>
+            <div ng-bind-html="item.tresc"></div>
+            <div class="crud">
+                <button ng-click="editEntry(item.id)">Edytuj</button>
+                <button ng-click="deleteEntry(item.id,$index)">Usuń</button>
+            </div>
+            <hr>
+        </li>
+    </ul>
+
+</div>

@@ -1,0 +1,12 @@
+<div ng-app="mainApp" ng-controller="editEntryCtrl">
+    <h2>{{typeinfo}}</h2>
+    <form>
+        <label>Tytuł: <br><input id="tytulWpisu" ng-model="tytulWpisu" maxlength="50"></label><br><br>
+        <label>Treść:
+            <br>
+            <textarea id="trescWpisu" ng-model="trescWpisu" cols="80" rows="30"></textarea> </label><br>
+        <button ng-click="entry()">{{textbutton}}</button>
+    </form>
+
+
+</div>

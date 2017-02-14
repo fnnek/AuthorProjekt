@@ -1,0 +1,255 @@
+html {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    margin: 10px auto;
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 15px;
+    border: none;
+    /*border-radius: 5px;
+    border-color: #2B403D;
+    border-width: 3px;
+    border-style: solid;*/
+    padding: 5px 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#container {
+
+    background-color: #dedede;
+    width: auto;
+}
+
+#main {
+    width: 100%;
+    background-color: #dedede;
+}
+
+#title {
+    text-align: center;
+    margin: 0 auto;
+    height: 300px;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 70px;
+    background-image: url("images/main.jpg");
+    background-size: cover;
+}
+
+#title p {
+    font-size: 20px;
+}
+
+
+
+#topMenu {
+    font-size: 16px;
+    width: auto;
+    background-color: #343434;
+    color: #CBE6CD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    border-color: #1a1a1a;
+}
+
+#topMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+#topMenu li {
+
+    width: 100%;
+    color: #fff;
+    display: inline;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #ffffff;;
+
+
+}
+
+#topMenu ul li a {
+    color: #FDEFEF;
+    text-decoration: none;
+    padding:  0 20px;
+}
+
+#menuContainer {
+    display: block;
+    margin: 0 auto;
+}
+#viewer {
+    background-color: white;
+    min-height: 500px;
+    margin: 0 20%;
+    padding: 20px 60px;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: justify;
+}
+/*Home view*/
+#info {
+    text-align: justify;
+    white-space: pre-wrap;
+    font-size: 15px;
+    ;
+}
+
+#info img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Meetings view*/
+
+#meetings ul li {
+    list-style-type: none;
+}
+
+#meetings ul li a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+#meetings ul li p {
+    font-size: 20px;
+}
+
+.entryDate {
+    font-size: 10px;
+    color: #595959;
+}
+
+
+
+/*Books view*/
+
+
+.cover {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+.cover > .text {
+    opacity:0;
+    position: absolute;
+    top:100px;
+    left: 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.5s;
+
+}
+
+
+.cover img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cover img:hover {
+    filter: brightness(40%);
+    cursor: pointer;
+
+}
+.cover:hover > .text{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.description {
+    display: block;
+    margin-top: 10px;
+    text-align: justify;
+    white-space: pre-wrap;
+}
+
+/*Novels view*/
+.novel {
+    height: 300px;
+   overflow: hidden;
+}
+
+.novel img {
+
+    max-width: 600px;
+}
+
+
+/*Entry view*/
+
+#trescWpisu {
+    white-space: pre-wrap;
+}
+
+#trescWpisu img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+#dodajKomentarz {
+    display: block;
+    margin: 0 auto;
+}
+
+#dodajKomentarz button {
+    margin: 5px 0;
+    font-size: 15px;
+    padding: 5px  10px;
+}
+
+#nick {
+    width: 300px;
+}
+
+#trescKom {
+    width: 300px;
+    height: 200px;
+}
+
+
+footer {
+    color: white;
+    text-shadow: 1px 1px darkgrey;
+    clear: both;
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px 0 10px 0;
+
+}

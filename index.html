@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Author home page</title>
+</head>
+<body ng-controller="homeCtrl">
+    <div id="container">
+        <div id="main">
+            <div id="topMenu">
+                <div id="menuContainer">
+                    <ul >
+                        <li ng-repeat="item in items"><a href="{{item.link}}">{{item.nazwa}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="title">
+                Author home page
+                <p>Where the fantasy meet reality</p>
+            </div>
+
+            <div id="outer">
+            <div id="viewer" ng-view>
+            </div>
+            </div>
+        </div>
+        <footer>
+            Rzeszów 2017r
+        </footer>
+    </div>
+</body>
+</html>

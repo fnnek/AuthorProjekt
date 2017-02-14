@@ -1,0 +1,29 @@
+<div ng-app="mainApp" ng-controller="entryCtrl">
+    <h2>{{tytul}}</h2>
+    <div class="entryDate">{{data}}</div>
+    <hr>
+    <div id="trescWpisu" ng-bind-html="tresc"></div>
+    <hr>
+    <div class="crud">
+        <button>Edytuj</button>
+        <button>Usuń</button>
+    </div>
+    <h3>Komentarze: </h3>
+    <div id="dodajKomentarz">
+        <p>Dodaj komentarz:</p>
+        <label>Nick:<br><input id="nick" ng-model="nick" ng-maxlength="50"/></label> <br>
+        <label>Treść:<br><textarea id="trescKom" ng-model="trescKom" ng-maxlength="1000" cols="100"
+                                   rows="10"></textarea></label>
+        <button id="dodajKom" ng-click="add()">Dodaj</button>
+    </div>
+    {{wiadomosc}}
+    <ul ng-repeat="comm in comments">
+        <li>
+            <p><b>Autor: {{comm.autor}}</b></p>
+            <div class="entryDate">Data: {{comm.data}}</div>
+            <div>{{comm.tresc}}</div>
+            <hr>
+        </li>
+    </ul>
+    {{info}}
+</div>

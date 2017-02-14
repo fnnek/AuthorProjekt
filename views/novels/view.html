@@ -1,0 +1,11 @@
+<div ng-app="mainApp" ng-controller="novelCtrl">
+    <h2>Opowiadania autora</h2>
+    <div id="novels" ng-repeat="item in items">
+        <h3>{{item.tytul}}</h3>
+            <div class="novel">
+            <img src="images/covers/{{item.okladka}}"/> <br>
+
+        </div>
+        <a href="{{item.tresc}}"><button>Czytaj całość</button></a>
+</div>        <hr>
+</div>
